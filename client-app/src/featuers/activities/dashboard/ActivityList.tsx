@@ -8,6 +8,8 @@ import {format} from 'date-fns';
 export const ActivityList: React.FC = () => {
     const rootStore = useContext(RootStoreContext);
     const { activitiesByDate } = rootStore.activityStore;
+    //console.log(activitiesByDate);
+    
     return (
         <Fragment>
             {activitiesByDate.map(([group, activities]) => (
